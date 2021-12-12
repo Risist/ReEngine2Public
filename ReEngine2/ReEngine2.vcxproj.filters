@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{d1fd4479-efbd-4898-9f9a-121270cbaa59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{e07634e8-05f4-4c70-93aa-9992ba45b59e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\RTTI">
+      <UniqueIdentifier>{d0619163-98b8-4167-85b4-bedc2cdf0610}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\RTTI\Serialization">
+      <UniqueIdentifier>{d48864c9-f1bb-4854-be62-abc7fad68c22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\RTTI\Drawing">
+      <UniqueIdentifier>{b9a861e5-ca72-46cd-a178-17834f609ca0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Editor">
+      <UniqueIdentifier>{658679e9-0d78-410c-88b7-780a89fe53b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Editor\Windows">
+      <UniqueIdentifier>{ccdccba9-7953-49eb-8bb8-23de11f86273}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Common">
+      <UniqueIdentifier>{057e8668-4f16-46c6-90cd-acf0807d672e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Common\Math">
+      <UniqueIdentifier>{d6703fea-b914-4f74-81f8-b1970ce1e5c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External">
+      <UniqueIdentifier>{f9572646-4db0-4fc0-85b3-f646763d2fb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\imgui">
+      <UniqueIdentifier>{8e17fe6f-9256-45dd-b5e6-2f8e50317e3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\RTTI\TypeDeclarations">
+      <UniqueIdentifier>{b71d006d-085a-4d2b-8c91-b905f08ea10e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Graphics">
+      <UniqueIdentifier>{f42a0603-4a13-47af-914f-f8ddd5b5d756}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Animations">
+      <UniqueIdentifier>{6f47044d-b1cb-4f28-8c7e-30d8d45cbd9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Editor\UndoRedo">
+      <UniqueIdentifier>{96a8d931-bcbf-4b17-941c-cd5b3b51a8a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Resource">
+      <UniqueIdentifier>{26cfd80a-b2ed-491d-9f97-b6e81b5a5cdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Entity">
+      <UniqueIdentifier>{6552b32e-077e-48d6-b4c8-50a10ab8c070}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Modes">
+      <UniqueIdentifier>{859cacc4-10e4-420c-9862-7f54951f0bbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Entity\Components">
+      <UniqueIdentifier>{b171ab20-5db3-497a-903e-23c50dad1db2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\AssetManagament">
+      <UniqueIdentifier>{0a0f86e0-aeb7-4a9f-afde-dead510698a9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Imgui\imgui.cpp">
+      <Filter>External\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Imgui\imgui_demo.cpp">
+      <Filter>External\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Imgui\imgui_draw.cpp">
+      <Filter>External\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Imgui\imgui_tables.cpp">
+      <Filter>External\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Imgui\imgui_widgets.cpp">
+      <Filter>External\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Imgui\imgui-SFML.cpp">
+      <Filter>External\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Engine.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Editor\Editor.cpp">
+      <Filter>Engine\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Editor\ImGuiManager.cpp">
+      <Filter>Engine\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Editor\Windows\AssetInspectorWindow.cpp">
+      <Filter>Engine\Editor\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Editor\Windows\ContentBrowserWindow.cpp">
+      <Filter>Engine\Editor\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Editor\Windows\HierarchyInspector.cpp">
+      <Filter>Engine\Editor\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Editor\Windows\ImGuiDemoWindow.cpp">
+      <Filter>Engine\Editor\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Editor\Windows\LevelEditorWindow.cpp">
+      <Filter>Engine\Editor\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Editor\Windows\SkeletalMesheditorWindow.cpp">
+      <Filter>Engine\Editor\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Editor\EditorWindow.cpp">
+      <Filter>Engine\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Common\Math\Angle.cpp">
+      <Filter>Engine\Common\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Reflection\rttiArray.cpp">
+      <Filter>Engine\RTTI</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Reflection\rttiClassType.cpp">
+      <Filter>Engine\RTTI</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Reflection\rttiEnum.cpp">
+      <Filter>Engine\RTTI</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Reflection\rttiTypeBase.cpp">
+      <Filter>Engine\RTTI</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Reflection\BasicTypesDefinitions.cpp">
+      <Filter>Engine\RTTI\TypeDeclarations</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Reflection\rttiSerialization.cpp">
+      <Filter>Engine\RTTI\Serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Reflection\rttiTypeDrawer.cpp">
+      <Filter>Engine\RTTI\Drawing</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Reflection\rttiUtilityDrawers.cpp">
+      <Filter>Engine\RTTI\Drawing</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\TextureAsset.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Common\Guid.cpp">
+      <Filter>Engine\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Editor\Windows\TextureManagerWindow.cpp">
+      <Filter>Engine\Editor\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Reflection\rttiTexture.cpp">
+      <Filter>Engine\RTTI\TypeDeclarations</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Reflection\rttiProperty.cpp">
+      <Filter>Engine\RTTI</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Animations\Animations.cpp">
+      <Filter>Engine\Animations</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Entity\Entity.cpp">
+      <Filter>Engine\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Entity\CompoundEntity.cpp">
+      <Filter>Engine\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Entity\EntityWorld.cpp">
+      <Filter>Engine\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Entity\EntityLevel.cpp">
+      <Filter>Engine\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Modes\GameMode.cpp">
+      <Filter>Engine\Modes</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Entity\TransformableEntity.cpp">
+      <Filter>Engine\Entity\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\SpriteAsset.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\SpriteAtlasAsset.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\AssetManagament\Asset.cpp">
+      <Filter>Engine\AssetManagament</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\AssetManagament\AssetManager.cpp">
+      <Filter>Engine\AssetManagament</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Entity\RectangleEntity.cpp">
+      <Filter>Engine\Entity\Components</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Imgui\imconfig.h">
+      <Filter>External\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Imgui\imgui.h">
+      <Filter>External\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Imgui\imgui_internal.h">
+      <Filter>External\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Imgui\imgui-SFML.h">
+      <Filter>External\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Imgui\imgui-SFML_export.h">
+      <Filter>External\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Imgui\imstb_rectpack.h">
+      <Filter>External\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Imgui\imstb_textedit.h">
+      <Filter>External\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Imgui\imstb_truetype.h">
+      <Filter>External\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Engine.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Editor\Editor.h">
+      <Filter>Engine\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Editor\ImGuiHelpers.h">
+      <Filter>Engine\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Editor\ImGuiManager.h">
+      <Filter>Engine\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Editor\Windows\SkeletalMeshEditorWindow.h">
+      <Filter>Engine\Editor\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Editor\Windows\AssetInspectorWindow.h">
+      <Filter>Engine\Editor\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Editor\Windows\ContentBrowserWindow.h">
+      <Filter>Engine\Editor\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Editor\Windows\HierarchyInspector.h">
+      <Filter>Engine\Editor\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Editor\Windows\ImGuiDemoWindow.h">
+      <Filter>Engine\Editor\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Editor\Windows\LevelEditorWindow.h">
+      <Filter>Engine\Editor\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Editor\EditorWindow.h">
+      <Filter>Engine\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Common\Math\Angle.h">
+      <Filter>Engine\Common\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Common\Math\Math.h">
+      <Filter>Engine\Common\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Common\HelperMacros.h">
+      <Filter>Engine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Common\Settings.h">
+      <Filter>Engine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Reflection\Reflection.h">
+      <Filter>Engine\RTTI</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Reflection\rttiArray.h">
+      <Filter>Engine\RTTI</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Reflection\rttiArrayBuilder.h">
+      <Filter>Engine\RTTI</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Reflection\rttiClassBuilder.h">
+      <Filter>Engine\RTTI</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Reflection\rttiClassTraitsMacros.h">
+      <Filter>Engine\RTTI</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Reflection\rttiClassType.h">
+      <Filter>Engine\RTTI</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Reflection\rttiEnum.h">
+      <Filter>Engine\RTTI</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Reflection\rttiEnumBuilder.h">
+      <Filter>Engine\RTTI</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Reflection\rttiFunction.h">
+      <Filter>Engine\RTTI</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Reflection\rttiTypeBase.h">
+      <Filter>Engine\RTTI</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Reflection\rttiTypeBuilder.h">
+      <Filter>Engine\RTTI</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Reflection\BasicTypesDefinitions.h">
+      <Filter>Engine\RTTI\TypeDeclarations</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Reflection\rttiVector.h">
+      <Filter>Engine\RTTI\TypeDeclarations</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Reflection\rttiColor.h">
+      <Filter>Engine\RTTI\TypeDeclarations</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Reflection\rttiSerialization.h">
+      <Filter>Engine\RTTI\Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Reflection\rttiTypeDrawer.h">
+      <Filter>Engine\RTTI\Drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Reflection\rttiUtilityDrawers.h">
+      <Filter>Engine\RTTI\Drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Reflection\BasicDrawers.h">
+      <Filter>Engine\RTTI\Drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Animations\Animations.h">
+      <Filter>Engine\Animations</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\TextureAsset.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Common\Guid.h">
+      <Filter>Engine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Editor\Windows\TextureManagerWindow.h">
+      <Filter>Engine\Editor\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Reflection\rttiTexture.h">
+      <Filter>Engine\RTTI\TypeDeclarations</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Reflection\rttiAssetType.h">
+      <Filter>Engine\RTTI</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Reflection\rttiAssetBuilder.h">
+      <Filter>Engine\RTTI</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Editor\UndoRedo\UndoRedo.h">
+      <Filter>Engine\Editor\UndoRedo</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Reflection\rttiProperty.h">
+      <Filter>Engine\RTTI</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Renderer.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Entity\CompoundEntity.h">
+      <Filter>Engine\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Entity\Entity.h">
+      <Filter>Engine\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Entity\EntityCore.h">
+      <Filter>Engine\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Entity\EntityWorld.h">
+      <Filter>Engine\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Entity\EntityLevel.h">
+      <Filter>Engine\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Entity\GroupInvoker.h">
+      <Filter>Engine\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Modes\Mode.h">
+      <Filter>Engine\Modes</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Modes\GameMode.h">
+      <Filter>Engine\Modes</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Modes\EditorMode.h">
+      <Filter>Engine\Modes</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Entity\TransformableEntity.h">
+      <Filter>Engine\Entity\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\SpriteAsset.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\SpriteAtlasAsset.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Rendering.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\AssetManagament\Asset.h">
+      <Filter>Engine\AssetManagament</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\AssetManagament\AssetManager.h">
+      <Filter>Engine\AssetManagament</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\AssetManagament\AssetReference.h">
+      <Filter>Engine\AssetManagament</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Entity\RectangleEntity.h">
+      <Filter>Engine\Entity\Components</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Engine\Reflection\rttiClassType.inl">
+      <Filter>Engine\RTTI</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Assets\TestSkeleton.txt">
+      <Filter>Resource</Filter>
+    </Text>
+    <Text Include="TestSerialization.txt">
+      <Filter>Resource</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

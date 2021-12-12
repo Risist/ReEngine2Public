@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{d74d4dfc-9c1a-46d2-be5d-5dc6cb033858}</ProjectGuid>
+    <RootNamespace>ReEngine2</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\Repo\ReEngine\ReEngine2\Middleware\SFML-2.5.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Repo\ReEngine\ReEngine2\Middleware\SFML-2.5.1\lib;$(LibraryPath)</LibraryPath>
+    <PublicIncludeDirectories>$(PublicIncludeDirectories)</PublicIncludeDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\Repo\ReEngine\ReEngine2\Middleware\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\Repo\ReEngine\ReEngine2\Middleware\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-audio-d.lib;sfml-system-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\Repo\ReEngine\ReEngine2\Middleware\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\Repo\ReEngine\ReEngine2\Middleware\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-system.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Middleware\SFML-2.5.1\include;%(AdditionalIncludeDirectories);$(SolutionDir)Middleware\glm-master;$(SolutionDir)Middleware\yaml-cpp-master\include;$(SolutionDir)Middleware\EASTL-master\include;$(SolutionDir)Middleware\multifunction-master;$(SolutionDir)ReEngine2</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>sfml-system-d.lib;sfml-window-d.lib;sfml-graphics-d.lib;sfml-audio-d.lib;opengl32.lib;yaml-cppd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Middleware\SFML-2.5.1\lib;$(SolutionDir)Middleware\yaml-cpp-master\build\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Middleware\SFML-2.5.1\include;%(AdditionalIncludeDirectories);$(SolutionDir)Middleware\glm-master;$(SolutionDir)Middleware\yaml-cpp-master\include;$(SolutionDir)Middleware\EASTL-master\include;$(SolutionDir)Middleware\multifunction-master;$(SolutionDir)ReEngine2</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Middleware\SFML-2.5.1\lib;$(SolutionDir)Middleware\yaml-cpp-master\build\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-system.lib;sfml-window.lib;sfml-graphics.lib;sfml-audio.lib;opengl32.lib;yaml-cpp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Engine\Animations\Animations.cpp" />
+    <ClCompile Include="Engine\AssetManagament\Asset.cpp" />
+    <ClCompile Include="Engine\AssetManagament\AssetManager.cpp" />
+    <ClCompile Include="Engine\Common\Guid.cpp" />
+    <ClCompile Include="Engine\Common\Math\Angle.cpp" />
+    <ClCompile Include="Engine\Editor\Editor.cpp" />
+    <ClCompile Include="Engine\Editor\EditorWindow.cpp" />
+    <ClCompile Include="Engine\Editor\ImGuiManager.cpp" />
+    <ClCompile Include="Engine\Editor\Windows\AssetInspectorWindow.cpp" />
+    <ClCompile Include="Engine\Editor\Windows\ContentBrowserWindow.cpp" />
+    <ClCompile Include="Engine\Editor\Windows\HierarchyInspector.cpp" />
+    <ClCompile Include="Engine\Editor\Windows\ImGuiDemoWindow.cpp" />
+    <ClCompile Include="Engine\Editor\Windows\LevelEditorWindow.cpp" />
+    <ClCompile Include="Engine\Editor\Windows\SkeletalMesheditorWindow.cpp" />
+    <ClCompile Include="Engine\Editor\Windows\TextureManagerWindow.cpp" />
+    <ClCompile Include="Engine\Engine.cpp" />
+    <ClCompile Include="Engine\Entity\CompoundEntity.cpp" />
+    <ClCompile Include="Engine\Entity\Entity.cpp" />
+    <ClCompile Include="Engine\Entity\EntityLevel.cpp" />
+    <ClCompile Include="Engine\Entity\EntityWorld.cpp" />
+    <ClCompile Include="Engine\Entity\RectangleEntity.cpp" />
+    <ClCompile Include="Engine\Entity\TransformableEntity.cpp" />
+    <ClCompile Include="Engine\Graphics\SpriteAsset.cpp" />
+    <ClCompile Include="Engine\Graphics\SpriteAtlasAsset.cpp" />
+    <ClCompile Include="Engine\Graphics\TextureAsset.cpp" />
+    <ClCompile Include="Engine\Modes\GameMode.cpp" />
+    <ClCompile Include="Engine\Reflection\BasicTypesDefinitions.cpp" />
+    <ClCompile Include="Engine\Reflection\rttiArray.cpp" />
+    <ClCompile Include="Engine\Reflection\rttiClassType.cpp" />
+    <ClCompile Include="Engine\Reflection\rttiEnum.cpp" />
+    <ClCompile Include="Engine\Reflection\rttiProperty.cpp" />
+    <ClCompile Include="Engine\Reflection\rttiSerialization.cpp" />
+    <ClCompile Include="Engine\Reflection\rttiTexture.cpp" />
+    <ClCompile Include="Engine\Reflection\rttiTypeBase.cpp" />
+    <ClCompile Include="Engine\Reflection\rttiTypeDrawer.cpp" />
+    <ClCompile Include="Engine\Reflection\rttiUtilityDrawers.cpp" />
+    <ClCompile Include="Imgui\imgui-SFML.cpp" />
+    <ClCompile Include="Imgui\imgui.cpp" />
+    <ClCompile Include="Imgui\imgui_demo.cpp" />
+    <ClCompile Include="Imgui\imgui_draw.cpp" />
+    <ClCompile Include="Imgui\imgui_tables.cpp" />
+    <ClCompile Include="Imgui\imgui_widgets.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine\Animations\Animations.h" />
+    <ClInclude Include="Engine\AssetManagament\Asset.h" />
+    <ClInclude Include="Engine\AssetManagament\AssetManager.h" />
+    <ClInclude Include="Engine\AssetManagament\AssetReference.h" />
+    <ClInclude Include="Engine\Common\Guid.h" />
+    <ClInclude Include="Engine\Common\HelperMacros.h" />
+    <ClInclude Include="Engine\Common\Math\Angle.h" />
+    <ClInclude Include="Engine\Common\Math\Math.h" />
+    <ClInclude Include="Engine\Common\Settings.h" />
+    <ClInclude Include="Engine\Editor\Editor.h" />
+    <ClInclude Include="Engine\Editor\EditorWindow.h" />
+    <ClInclude Include="Engine\Editor\ImGuiHelpers.h" />
+    <ClInclude Include="Engine\Editor\ImGuiManager.h" />
+    <ClInclude Include="Engine\Editor\UndoRedo\UndoRedo.h" />
+    <ClInclude Include="Engine\Editor\Windows\AssetInspectorWindow.h" />
+    <ClInclude Include="Engine\Editor\Windows\ContentBrowserWindow.h" />
+    <ClInclude Include="Engine\Editor\Windows\HierarchyInspector.h" />
+    <ClInclude Include="Engine\Editor\Windows\ImGuiDemoWindow.h" />
+    <ClInclude Include="Engine\Editor\Windows\LevelEditorWindow.h" />
+    <ClInclude Include="Engine\Editor\Windows\SkeletalMeshEditorWindow.h" />
+    <ClInclude Include="Engine\Editor\Windows\TextureManagerWindow.h" />
+    <ClInclude Include="Engine\Engine.h" />
+    <ClInclude Include="Engine\Entity\CompoundEntity.h" />
+    <ClInclude Include="Engine\Entity\Entity.h" />
+    <ClInclude Include="Engine\Entity\EntityCore.h" />
+    <ClInclude Include="Engine\Entity\GroupInvoker.h" />
+    <ClInclude Include="Engine\Entity\EntityLevel.h" />
+    <ClInclude Include="Engine\Entity\EntityWorld.h" />
+    <ClInclude Include="Engine\Entity\RectangleEntity.h" />
+    <ClInclude Include="Engine\Entity\TransformableEntity.h" />
+    <ClInclude Include="Engine\Graphics\Renderer.h" />
+    <ClInclude Include="Engine\Graphics\Rendering.h" />
+    <ClInclude Include="Engine\Graphics\SpriteAsset.h" />
+    <ClInclude Include="Engine\Graphics\SpriteAtlasAsset.h" />
+    <ClInclude Include="Engine\Graphics\TextureAsset.h" />
+    <ClInclude Include="Engine\Modes\EditorMode.h" />
+    <ClInclude Include="Engine\Modes\GameMode.h" />
+    <ClInclude Include="Engine\Modes\Mode.h" />
+    <ClInclude Include="Engine\Reflection\BasicDrawers.h" />
+    <ClInclude Include="Engine\Reflection\BasicTypesDefinitions.h" />
+    <ClInclude Include="Engine\Reflection\Reflection.h" />
+    <ClInclude Include="Engine\Reflection\rttiArray.h" />
+    <ClInclude Include="Engine\Reflection\rttiArrayBuilder.h" />
+    <ClInclude Include="Engine\Reflection\rttiAssetBuilder.h" />
+    <ClInclude Include="Engine\Reflection\rttiAssetType.h" />
+    <ClInclude Include="Engine\Reflection\rttiClassBuilder.h" />
+    <ClInclude Include="Engine\Reflection\rttiClassTraitsMacros.h" />
+    <ClInclude Include="Engine\Reflection\rttiClassType.h" />
+    <ClInclude Include="Engine\Reflection\rttiColor.h" />
+    <ClInclude Include="Engine\Reflection\rttiEnum.h" />
+    <ClInclude Include="Engine\Reflection\rttiEnumBuilder.h" />
+    <ClInclude Include="Engine\Reflection\rttiFunction.h" />
+    <ClInclude Include="Engine\Reflection\rttiProperty.h" />
+    <ClInclude Include="Engine\Reflection\rttiSerialization.h" />
+    <ClInclude Include="Engine\Reflection\rttiTexture.h" />
+    <ClInclude Include="Engine\Reflection\rttiTypeBase.h" />
+    <ClInclude Include="Engine\Reflection\rttiTypeBuilder.h" />
+    <ClInclude Include="Engine\Reflection\rttiTypeDrawer.h" />
+    <ClInclude Include="Engine\Reflection\rttiUtilityDrawers.h" />
+    <ClInclude Include="Engine\Reflection\rttiVector.h" />
+    <ClInclude Include="Imgui\imconfig.h" />
+    <ClInclude Include="Imgui\imgui-SFML.h" />
+    <ClInclude Include="Imgui\imgui-SFML_export.h" />
+    <ClInclude Include="Imgui\imgui.h" />
+    <ClInclude Include="Imgui\imgui_internal.h" />
+    <ClInclude Include="Imgui\imstb_rectpack.h" />
+    <ClInclude Include="Imgui\imstb_textedit.h" />
+    <ClInclude Include="Imgui\imstb_truetype.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Engine\Reflection\rttiClassType.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Assets\TestSkeleton.txt" />
+    <Text Include="TestSerialization.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

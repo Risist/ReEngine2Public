@@ -1,0 +1,2 @@
+﻿main.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Time::Time(void)" (__imp_??0Time@sf@@QAE@XZ)
+D:\Repo\ReEngine\ReEngine2\Release\ReEngine2.exe : fatal error LNK1120: 1 unresolved externals

@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+.vs/*
+/ReEngine2/imgui_log.txt
+/ReEngine2/imgui.ini
